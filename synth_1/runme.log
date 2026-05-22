@@ -1,0 +1,290 @@
+
+*** Running vivado
+    with args -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat May 23 00:54:17 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Top_Module.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 523.211 ; gain = 220.398
+Command: read_checkpoint -auto_incremental -incremental {E:/Verilog Projects/Single-Cycle MIPS/CPU.srcs/utils_1/imports/synth_1/Top_Module.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Verilog Projects/Single-Cycle MIPS/CPU.srcs/utils_1/imports/synth_1/Top_Module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top_Module -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25172
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1068.250 ; gain = 532.457
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'zero_flag' is used before its declaration [E:/Verilog Projects/Single-Cycle MIPS/Top_Module.v:56]
+WARNING: [Synth 8-6901] identifier 'zero_flag' is used before its declaration [E:/Verilog Projects/Single-Cycle MIPS/Top_Module.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [E:/Verilog Projects/Single-Cycle MIPS/Top_Module.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Program_Counter' [E:/Verilog Projects/Single-Cycle MIPS/Program_Counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Program_Counter' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Program_Counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [E:/Verilog Projects/Single-Cycle MIPS/Instruction_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Instruction_Memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [E:/Verilog Projects/Single-Cycle MIPS/Register_File.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Register_File.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit' [E:/Verilog Projects/Single-Cycle MIPS/Control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [E:/Verilog Projects/Single-Cycle MIPS/ALU_Control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/ALU_Control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Verilog Projects/Single-Cycle MIPS/ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [E:/Verilog Projects/Single-Cycle MIPS/Data_Memory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Data_Memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extender' [E:/Verilog Projects/Single-Cycle MIPS/Sign_Extender.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extender' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Sign_Extender.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Shift_Left_2' [E:/Verilog Projects/Single-Cycle MIPS/Shift_Left_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Shift_Left_2' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Shift_Left_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [E:/Verilog Projects/Single-Cycle MIPS/Adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX2x1' [E:/Verilog Projects/Single-Cycle MIPS/MUX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2x1' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/MUX.v:1]
+WARNING: [Synth 8-689] width (5) of port connection 'mux_input_1' does not match port width (32) of module 'MUX2x1' [E:/Verilog Projects/Single-Cycle MIPS/Top_Module.v:179]
+WARNING: [Synth 8-689] width (5) of port connection 'mux_input_2' does not match port width (32) of module 'MUX2x1' [E:/Verilog Projects/Single-Cycle MIPS/Top_Module.v:180]
+WARNING: [Synth 8-689] width (5) of port connection 'mux_out' does not match port width (32) of module 'MUX2x1' [E:/Verilog Projects/Single-Cycle MIPS/Top_Module.v:182]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (0#1) [E:/Verilog Projects/Single-Cycle MIPS/Top_Module.v:2]
+WARNING: [Synth 8-3848] Net memory_reg in module/entity Instruction_Memory does not have driver. [E:/Verilog Projects/Single-Cycle MIPS/Instruction_Memory.v:7]
+WARNING: [Synth 8-7137] Register registers_reg[0] in module Reg_File has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Verilog Projects/Single-Cycle MIPS/Register_File.v:19]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1190.301 ; gain = 654.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.301 ; gain = 654.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.301 ; gain = 654.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1190.301 ; gain = 654.508
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 33    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 32    
+	   8 Input    1 Bit        Muxes := 9     
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port Shift_Left_2_input[31] in module Shift_Left_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Shift_Left_2_input[30] in module Shift_Left_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[1] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[0] in module Data_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_pc[1] in module Instruction_Memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port current_pc[0] in module Instruction_Memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:05 . Memory (MB): peak = 1442.035 ; gain = 906.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------+-----------+----------------------+------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------+-----------+----------------------+------------------+
+|DM          | memory_reg_reg | Implied   | 1 K x 32             | RAM256X1S x 128  | 
++------------+----------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:01:06 . Memory (MB): peak = 1442.035 ; gain = 906.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------+-----------+----------------------+------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------+-----------+----------------------+------------------+
+|DM          | memory_reg_reg | Implied   | 1 K x 32             | RAM256X1S x 128  | 
++------------+----------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:01:07 . Memory (MB): peak = 1442.035 ; gain = 906.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    36|
+|3     |LUT1      |     2|
+|4     |LUT2      |   139|
+|5     |LUT3      |   197|
+|6     |LUT4      |    49|
+|7     |LUT5      |    66|
+|8     |LUT6      |   662|
+|9     |MUXF7     |   256|
+|10    |RAM256X1S |   128|
+|11    |FDCE      |  1024|
+|12    |IBUF      |     2|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------+------+
+|      |Instance             |Module             |Cells |
++------+---------------------+-------------------+------+
+|1     |top                  |                   |  2562|
+|2     |  PC                 |Program_Counter    |    34|
+|3     |  IM                 |Instruction_Memory |     5|
+|4     |  RF                 |Reg_File           |  1856|
+|5     |  CU                 |Control_Unit       |    10|
+|6     |  ALU_Ctrl           |ALU_Control        |     7|
+|7     |  alu                |ALU                |   203|
+|8     |  DM                 |Data_Memory        |   203|
+|9     |  Immediate_Extender |Sign_Extender      |     0|
+|10    |  Immediate_Shifting |Shift_Left_2       |     0|
+|11    |  Immediate          |Adder__1           |    40|
+|12    |  PC_Plus_4          |Adder              |    40|
+|13    |  MUX_RF             |MUX2x1__1          |    32|
+|14    |  MUX_ALU            |MUX2x1__2          |    32|
+|15    |  MUX_DM             |MUX2x1__3          |    32|
+|16    |  MUX_branch_pc_by_4 |MUX2x1__4          |    32|
+|17    |  MUX_PC             |MUX2x1             |    32|
++------+---------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 1606.062 ; gain = 1070.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1619.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 420 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1731.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 128 instances
+
+Synth Design complete | Checksum: 39666f2b
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:27 . Memory (MB): peak = 1731.945 ; gain = 1202.957
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1731.945 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Verilog Projects/Single-Cycle MIPS/synth_1/Top_Module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 23 00:55:59 2026...

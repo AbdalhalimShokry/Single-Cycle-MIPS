@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri May 22 18:58:10 2026
+# Process ID         : 11540
+# Current directory  : E:/Verilog Projects/Single-Cycle MIPS
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent14536 E:\Verilog Projects\Single-Cycle MIPS\CPU.xpr
+# Log file           : E:/Verilog Projects/Single-Cycle MIPS/vivado.log
+# Journal file       : E:/Verilog Projects/Single-Cycle MIPS\vivado.jou
+# Running On         : DESKTOP-TKTPDGE
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16868 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 27069 MB
+# Available Virtual  : 13455 MB
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Verilog Projects/Single-Cycle MIPS/CPU.xpr}
+update_compile_order -fileset sources_1
+synth_design -top Top_Module -part xc7s6ftgb196-1 -lint 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7s50csga324-1 [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+open_run synth_1 -name synth_1
+report_utilization -hierarchical_min_primitive_count 50 -name utilization_1
+current_design impl_1
+current_design synth_1
+current_design impl_1
+current_design synth_1
+current_design impl_1
+current_design synth_1

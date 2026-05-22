@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon May 11 21:22:48 2026
+# Process ID         : 13808
+# Current directory  : E:/Projects_Verilog
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent18264 E:\Projects_Verilog\CPU.xpr
+# Log file           : E:/Projects_Verilog/vivado.log
+# Journal file       : E:/Projects_Verilog\vivado.jou
+# Running On         : DESKTOP-TKTPDGE
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13620H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16868 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27606 MB
+# Available Virtual  : 16386 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Projects_Verilog/CPU.xpr
+update_compile_order -fileset sources_1
+close [ open E:/Projects_Verilog/Control.v w ]
+add_files E:/Projects_Verilog/Control.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -top ALU -part xc7s6ftgb196-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Data_Memory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
